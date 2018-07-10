@@ -1,0 +1,22 @@
+[2018-07-10 11:02:17 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-10 11:02:20 AM][root][INFO][process_user]:用户导入完毕,discuz后台更新缓存后生效
+[2018-07-10 11:02:20 AM][root][INFO][process_forum]:论坛板块导入完毕
+[2018-07-10 11:02:20 AM][root][INFO][process_forum]:论坛板块层级关系调整完毕
+[2018-07-10 11:02:21 AM][root][INFO][process_thread]:帖子信息导入完毕
+[2018-07-10 11:02:57 AM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2018-07-10 11:02:57 AM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2018-07-10 11:02:57 AM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2018-07-10 11:02:58 AM][root][INFO][process_reply]:帖子内容迁移完毕
+[2018-07-10 11:03:04 AM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2018-07-10 11:03:09 AM][root][INFO][process_reply]:跟帖用户id更新完毕
+[2018-07-10 11:06:14 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-10 11:06:23 AM][root][INFO][process_user]:用户导入完毕,discuz后台更新缓存后生效
+[2018-07-10 11:06:23 AM][root][INFO][process_forum]:论坛板块导入完毕
+[2018-07-10 11:06:23 AM][root][INFO][process_forum]:论坛板块层级关系调整完毕
+[2018-07-10 11:06:24 AM][root][INFO][process_thread]:帖子信息导入完毕
+[2018-07-10 11:06:58 AM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2018-07-10 11:06:58 AM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2018-07-10 11:06:58 AM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2018-07-10 11:07:00 AM][root][INFO][process_reply]:帖子内容迁移完毕
+[2018-07-10 11:07:10 AM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2018-07-10 11:54:55 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}

@@ -1,9 +1,3 @@
-/*
- * @Author: wjsaya(www.wjsaya.top) 
- * @Date: 2018-07-10 11:48:35 
- * @Last Modified by:   wjsaya(www.wjsaya.top) 
- * @Last Modified time: 2018-07-10 11:48:35 
- */
 # 项目地址:
 https://github.com/wjsaya/chanzhi2discuz  
 
