@@ -25,6 +25,7 @@ logging.basicConfig(
 def run(cz):
     do1(cz)
     do2(cz)
+    do3(cz)
     do6(cz)
     do7(cz)
     print("论坛帖子导入处理完成")
