@@ -24,25 +24,21 @@ def run(cz):
 
 def fun1(cz):
     #添加分类
+
+    ORIGON_TABLE = cz.ORIGON_DB + '.eps_category'
     DEST_TABLE = cz.DEST_DB + '.pre_portal_category'
 
-    orignFields1 = '"186", "0", "社区学院", "1",                "1",              "1", "dz_admin", "1531151988", "0",    "1",      "",          "",      "",       "./template/default:portal/list", "./template/default:portal/view", "0",                 "20",    "1000"'
-    targetFields = "catid,  upid, catname, notinheritedarticle, notinheritedblock, uid, username, dateline,      closed, shownav, description, seotitle, keyword, primaltplname,                     articleprimaltplname,            notshowarticlesummay, perpage, maxpages"
-    orignFields2 = '"185", "1",  "技术角", "1",                 "1",              "1",   "dz_admin", "1531151988", "0",    "1",      "",          "",      "",       "./template/default:portal/list", "./template/default:portal/view", "0",                  "20",   "1000"'
-    #uid稍后更新, 暂时填0
-    #####稍后更改, 添加字段应该从eps_category里筛选出来, 条件为type="article"
-    sqli = "insert into %s (%s) values(%s)"
-    re1 = cz.justdoit(sqli % (DEST_TABLE, targetFields, orignFields1))
-    re2 = cz.justdoit(sqli % (DEST_TABLE, targetFields, orignFields2))
+    orignFields = 'id,     "0",  name,    "1",                 "1",               "1", "dz_admin", UNIX_TIMESTAMP(postedDate), "0",    "1",     "",          "",       "",      "./template/default:portal/list",  "./template/default:portal/view", "0",                 "20",     "1000"'
+    targetFields = "catid,  upid, catname, notinheritedarticle, notinheritedblock, uid, username,   dateline,                   closed, shownav, description, seotitle, keyword, primaltplname,                     articleprimaltplname,             notshowarticlesummay, perpage, maxpages"
+    WHERE = 'where type not in ("slide", "forum")'
 
-    if (re1 is True and re2 is True):
+    re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields, WHERE)
+
+    if (re is True):
         logging.info("文章分类导入完毕, 后台更新缓存后生效")
 
-    else:
-        if isinstance(re1, str):
-            logging.error("导入文章分类报错: " + re1)
-        if isinstance(re2, str):
-            logging.error("导入文章分类报错: " + re2)
+    elif isinstance(re, str):
+            logging.error("导入文章分类报错: " + re)
 
 def fun2(cz):
     #把分类放到首页
@@ -104,9 +100,9 @@ def fun5(cz):
     re = cz.change(TABLE, op, WHERE)
 
     if (re is True):
-        logging.info("用户id更新完毕, 刷新前台页面生效")
+        logging.info("文章发布者id更新完毕, 刷新前台页面生效")
     elif isinstance(re, str):
-        logging.error("用户id更新报错: " + re)
+        logging.error("文章发布者id更新报错: " + re)
     
 def fun6(cz):
     #迁移正文
