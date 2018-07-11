@@ -16,3 +16,5 @@
 [2018-07-11 16:16:38 PM][root][INFO][process_article]:文章与栏目关联完毕, 刷新前台页面生效
 [2018-07-11 16:16:38 PM][root][INFO][process_article]:用户id更新完毕, 刷新前台页面生效
 [2018-07-11 16:16:38 PM][root][INFO][process_article]:文章正文导入完毕, 刷新前台页面生效
+[2018-07-11 16:32:05 PM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-11 16:32:05 PM][root][INFO][process_reply]:帖子数量计数器更新完毕

@@ -18,6 +18,7 @@ def run(cz):
     fun2(cz)
     fun3(cz)
     fun4(cz)
+    fun5(cz)
     print("跟帖导入处理完成")
 
 def fun1(cz):
@@ -96,3 +97,27 @@ def fun4(cz):
         return False
     else:
         logging.info("跟帖用户id更新完毕")
+
+def fun5(cz):
+    sqli1 = "CREATE view " + cz.DEST_DB + ".temp_postcount as  \
+            select count(1) as num, fid from " + cz.DEST_DB + ".pre_forum_post group by fid;"
+
+    TABLE = cz.DEST_DB + ".pre_forum_forum, " + cz.DEST_DB + ".temp_postcount"
+    op = "set " + cz.DEST_DB + ".pre_forum_forum.posts = " + cz.DEST_DB + ".temp_postcount.num"
+    WHERE = "where " + cz.DEST_DB + ".pre_forum_forum.fid = " + cz.DEST_DB + ".temp_postcount.fid"
+
+    sqli3 = "drop view " + cz.DEST_DB + ".temp_postcount;"
+
+    re1 = cz.justdoit(sqli1)
+    re2 = cz.change(TABLE, op, WHERE)
+    re3 = cz.justdoit(sqli3)
+
+    if isinstance(re1, str):
+        logging.error(re1)
+    if isinstance(re3, str):
+        logging.error(re3)
+    
+    if (re2 is True):
+        logging.info("帖子数量计数器更新完毕")
+    elif isinstance(re2, str):
+        logging.error("帖子数量计数器更新出错: " + re2)

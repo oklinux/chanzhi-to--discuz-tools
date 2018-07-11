@@ -1,6 +1,7 @@
 #python
-.*pyc
-*/pyc
+*.pyc
+.pyc
+*/*.pyc
 __pycache__/
 
 #vscode

@@ -15,7 +15,7 @@ process_forum.py|板块转移|完成
 process_thread.py|帖子迁移|完成
 process_reply.py|跟帖迁移|完成
 xxxx.py|博客迁移|未开始
-process_article.py|文章迁移|未开始
+process_article.py|文章迁移|完成
 
 
 
