@@ -8,7 +8,7 @@
 import logging
 
 from conf import config
-from lib import process_forum, process_reply, process_thread, process_user
+from lib import process_forum, process_reply, process_thread, process_user, process_article
 from lib.chanzhi_class import chanzhi
 
 logging.basicConfig(
@@ -24,3 +24,4 @@ if __name__ == '__main__':
     process_forum.run(cz)
     process_thread.run(cz)
     process_reply.run(cz)
+    process_article.run(cz)

@@ -1,6 +1,3 @@
-# 项目地址:
-https://github.com/wjsaya/chanzhi2discuz  
-
 # 说明
 ./main.py为程序主入口  
 ./conf/config.py, 记录全局配置项  
@@ -17,3 +14,21 @@ process_user.py|用户迁移|完成
 process_forum.py|板块转移|完成
 process_thread.py|帖子迁移|完成
 process_reply.py|跟帖迁移|完成
+xxxx.py|博客迁移|未开始
+process_article.py|文章迁移|未开始
+
+
+
+
+# 文章解析
+蝉知  
+1, 在eps_article插入文章标题, 内容, 关键词, 发布者等信息  
+2, 从eps_category获取文章分类的id  
+3, 把分类id, 文章id, 文章类别插入eps_relation表  
+
+
+discuz  
+1, 添加新的分类, 类名, 类id等添加到pre_portal_category表   
+2, 把新分类的地址添加到导航栏, 加入pre_common_nav表  
+3, 
+

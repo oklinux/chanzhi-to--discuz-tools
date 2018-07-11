@@ -1,0 +1,7 @@
+#python
+.*pyc
+*/pyc
+
+#vscode
+.vocode
+*/.vscode

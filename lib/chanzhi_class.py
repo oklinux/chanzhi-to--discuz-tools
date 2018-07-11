@@ -35,6 +35,7 @@ class chanzhi:
 
     def transfer(self, FROM, TO, orignFields, targetFields, where = ''):
         sqli = "replace into %s (%s) select %s from %s %s;"
+        #print(sqli % (TO, targetFields, orignFields, FROM, where))
         cur = self.__conn.cursor()
         try:
             cur.execute(sqli % (TO, targetFields, orignFields, FROM, where))
