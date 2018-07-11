@@ -28,7 +28,7 @@ def fun1(cz):
     targetFields  = "tid, pid, first, fid,   author, message, dateline"
     re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields)
     
-    if (re):
+    if (re is True):
         logging.info("帖子内容迁移完毕")
     elif isinstance(re, str):
         logging.error("迁移帖子内容报错: " + re)
@@ -51,7 +51,7 @@ def fun2(cz):
     #       由于是先导入的主题帖,因此只能在将跟帖pid全部加上主题帖的最大id,防止冲突
     targetFields  = "pid,  tid,    first, author, message, dateline"
     re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields)
-    if (re):
+    if (re is True):
         logging.info("论坛帖子跟帖迁移完毕, 刷新前台页面生效")
     elif isinstance(re, str):
         logging.error("迁移跟帖内容报错: " + re)

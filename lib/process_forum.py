@@ -23,7 +23,7 @@ def run(cz):
 
     re1 = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields)
 
-    if (re1):
+    if (re1 is True):
         logging.info("论坛板块导入完毕")
     elif isinstance(re1, str):
         logging.error("导入论坛板块报错: " + re1)
@@ -34,11 +34,11 @@ def run(cz):
 
     re2 = cz.change(DEST_TABLE, op, WHERE)
 
-    if (re2):
+    if (re2 is True):
         logging.info("论坛板块层级关系调整完毕")
     elif isinstance(re2, str):
         logging.error("调整板块层级关系报错: " + re2)
         return False
 
-    
+
     print("论坛板块导入处理完成")

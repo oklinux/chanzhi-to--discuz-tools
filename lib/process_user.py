@@ -27,7 +27,7 @@ def run(cz):
     targetFields2 = "uid, username, password, email, regdate,                credits"
     re2 = cz.transfer(ORIGON_TABLE, DEST_TABLE2, orignFields2, targetFields2)
 
-    if (re1 and re2):
+    if (re1 is True and re2 is True):
         logging.info("用户导入完毕,discuz后台更新缓存后生效")
 
     else:

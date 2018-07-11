@@ -27,8 +27,11 @@ process_article.py|文章迁移|未开始
 3, 把分类id, 文章id, 文章类别插入eps_relation表  
 
 
+
 discuz  
 1, 添加新的分类, 类名, 类id等添加到pre_portal_category表   
-2, 把新分类的地址添加到导航栏, 加入pre_common_nav表  
-3, 
+2, 文章标题作者信息写入pre_portal_article_title表  
+3, 文章正文内容写入pre_portal_article_content表  
+[4, 把新分类的地址添加到导航栏, 加入pre_common_nav表  这一步不是发布文章必选项]  
+
 

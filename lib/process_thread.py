@@ -41,7 +41,7 @@ def do1(cz):
 
     re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields)
     
-    if (re):
+    if (re is True):
         logging.info("帖子信息导入完毕")
     elif isinstance(re, str):
         logging.error("帖子信息导入出错: " + re)
@@ -79,14 +79,14 @@ def do6(cz):
     sqli1 = "CREATE view " + cz.DEST_DB + ".temp_threadscount as  \
             select count(1) as num, fid from " + cz.DEST_DB + ".pre_forum_thread group by fid;"
 
-    sqli21 = cz.DEST_DB + ".pre_forum_forum, " + cz.DEST_DB + ".temp_threadscount"
-    sqli22 = "set " + cz.DEST_DB + ".pre_forum_forum.threads = " + cz.DEST_DB + ".temp_threadscount.num"
-    sqli23 = "where " + cz.DEST_DB + ".pre_forum_forum.fid = " + cz.DEST_DB + ".temp_threadscount.fid"
+    TABLE = cz.DEST_DB + ".pre_forum_forum, " + cz.DEST_DB + ".temp_threadscount"
+    op = "set " + cz.DEST_DB + ".pre_forum_forum.threads = " + cz.DEST_DB + ".temp_threadscount.num"
+    WHERE = "where " + cz.DEST_DB + ".pre_forum_forum.fid = " + cz.DEST_DB + ".temp_threadscount.fid"
 
     sqli3 = "drop view " + cz.DEST_DB + ".temp_threadscount;"
 
     re1 = cz.justdoit(sqli1)
-    re2 = cz.change(sqli21, sqli22, sqli23)
+    re2 = cz.change(TABLE, op, WHERE)
     re3 = cz.justdoit(sqli3)
 
     if isinstance(re1, str):
@@ -94,7 +94,7 @@ def do6(cz):
     if isinstance(re3, str):
         logging.error(re3)
     
-    if (re2):
+    if (re2 is True):
         logging.info("帖子数量计数器更新完毕")
     elif isinstance(re2, str):
         logging.error("帖子数量计数器更新出错: " + re2)
@@ -113,7 +113,7 @@ def do7(cz):
 
     re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields, WHERE)
 
-    if (re):
+    if (re is True):
         logging.info("用户发帖计数更新完毕")
     elif isinstance(re, str):
         logging.error("用户发帖计数更新出错: " + re)
