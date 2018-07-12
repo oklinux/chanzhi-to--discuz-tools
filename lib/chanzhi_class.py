@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+# @Project: chanzhi2discuz(https://github.com/wjsaya/chanzhi2discuz)
 # @Author:	wjsaya(http://www.wjsaya.top) 
 # @Date:	2018-07-10 11:54:22 
 # @Last Modified by:	wjsaya(http://www.wjsaya.top) 
@@ -47,7 +48,7 @@ class chanzhi:
 
     def change(self, table, operate, where=''):
         sqli = "update %s %s %s;"
-    #    print(sqli % (table, operate, where))
+        print(sqli % (table, operate, where))
         cur = self.__conn.cursor()
         try:
             cur.execute(sqli % (table, operate, where))
@@ -56,6 +57,7 @@ class chanzhi:
             return True
         except Exception as e:
             cur.close()
+            print(type(e.__str__()))
             return (e.__str__())
 
     def justdoit(self, sqli):

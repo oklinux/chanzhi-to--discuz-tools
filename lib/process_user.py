@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+# @Project: chanzhi2discuz(https://github.com/wjsaya/chanzhi2discuz)
 # @Author:	wjsaya(http://www.wjsaya.top) 
 # @Date:	2018-07-10 11:54:37 
 # @Last Modified by:	wjsaya(http://www.wjsaya.top) 
-# @Last Modified time:	2018-07-10 11:54:37 
+# @Last Modified time:	2018-07-12 11:18:40 
  
 import logging
 
@@ -15,6 +16,11 @@ logging.basicConfig(
 
 
 def run(cz):
+    fun1(cz)
+    fun2(cz)
+
+def fun1(cz):
+    #迁移用户信息
     ORIGON_TABLE = cz.ORIGON_DB + '.eps_user'
 
     DEST_TABLE = cz.DEST_DB + '.pre_ucenter_members'
@@ -37,3 +43,21 @@ def run(cz):
         if isinstance(re2, str):
             logging.error("插入用户报错: " + re1)
     print("用户导入处理完成")
+
+
+    
+def fun2(cz):
+    #绑定用户与用户组
+    ORIGON_TABLE = cz.DEST_DB + '.pre_common_usergroup as ug'
+    DEST_TABLE = cz.DEST_DB + '.pre_common_member as m, ' +  ORIGON_TABLE
+
+    op = 'set m.groupid = ug.groupid'
+    WHERE = ' where m.credits between ug.creditshigher and ug.creditslower'
+
+    re = cz.change(DEST_TABLE, op, WHERE)
+
+    if (re is True):
+        logging.info("用户组更新完毕, 刷新前台页面生效")
+    elif isinstance(re, str):
+        logging.error("用户组更新报错: " + re)
+    print("用户与用户组绑定处理完毕")

@@ -18,3 +18,31 @@
 [2018-07-11 16:16:38 PM][root][INFO][process_article]:文章正文导入完毕, 刷新前台页面生效
 [2018-07-11 16:32:05 PM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
 [2018-07-11 16:32:05 PM][root][INFO][process_reply]:帖子数量计数器更新完毕
+[2018-07-12 10:44:54 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 10:44:54 AM][root][INFO][process_reply]:帖子数量计数器更新完毕
+[2018-07-12 11:11:05 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:11:05 AM][root][ERROR][process_countnumber]:用户组更新报错: (1146, "Table 'old_chanzhi.pre_common_usergroup' doesn't exist")
+[2018-07-12 11:11:37 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:11:37 AM][root][ERROR][process_countnumber]:用户组更新报错: (1146, "Table 'old_chanzhi.pre_common_usergroup' doesn't exist")
+[2018-07-12 11:11:38 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:11:38 AM][root][ERROR][process_countnumber]:用户组更新报错: (1146, "Table 'old_chanzhi.pre_common_usergroup' doesn't exist")
+[2018-07-12 11:12:13 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:12:13 AM][root][ERROR][process_countnumber]:用户组更新报错: (1146, "Table 'old_chanzhi.pre_common_usergroup' doesn't exist")
+[2018-07-12 11:13:07 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:13:07 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:13:07 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:13:31 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:13:31 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:13:31 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:13:41 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:13:41 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:14:02 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:14:02 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:14:12 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:14:12 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:14:17 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:14:17 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:14:34 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:14:34 AM][root][ERROR][process_countnumber]:用户组更新报错: (1054, "Unknown column 'uh.groupid' in 'field list'")
+[2018-07-12 11:15:58 AM][root][INFO][main]:开始迁移数据, 从{old_chanzhi} 到 {discuz}
+[2018-07-12 11:16:00 AM][root][INFO][process_countnumber]:用户组更新完毕, 刷新前台页面生效

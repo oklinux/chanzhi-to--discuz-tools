@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+# @Project: chanzhi2discuz(https://github.com/wjsaya/chanzhi2discuz)
 # @Author:	wjsaya(http://www.wjsaya.top) 
 # @Date:	2018-07-10 11:54:26 
 # @Last Modified by:	wjsaya(http://www.wjsaya.top) 

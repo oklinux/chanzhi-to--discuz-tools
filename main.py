@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+# @Project: chanzhi2discuz(https://github.com/wjsaya/chanzhi2discuz)
 # @Author:	wjsaya(http://www.wjsaya.top) 
 # @Date:	2018-07-10 11:54:03 
 # @Last Modified by:	wjsaya(http://www.wjsaya.top) 
-# @Last Modified time:	2018-07-10 11:54:03 
+# @Last Modified time:	2018-07-12 11:21:05 
  
 import logging
 

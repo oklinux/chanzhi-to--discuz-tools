@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
+# @Project: chanzhi2discuz(https://github.com/wjsaya/chanzhi2discuz)
 # @Author:	wjsaya(http://www.wjsaya.top) 
 # @Date:	2018-07-10 11:54:32 
 # @Last Modified by:	wjsaya(http://www.wjsaya.top) 
-# @Last Modified time:	2018-07-10 11:54:32 
- 
+# @Last Modified time:	2018-07-12 10:45:35 
+
 import logging
 
 logging.basicConfig(
@@ -19,6 +20,7 @@ def run(cz):
     fun3(cz)
     fun4(cz)
     fun5(cz)
+    fun6(cz)
     print("跟帖导入处理完成")
 
 def fun1(cz):
@@ -99,6 +101,7 @@ def fun4(cz):
         logging.info("跟帖用户id更新完毕")
 
 def fun5(cz):
+    #更新用户发帖计数
     sqli1 = "CREATE view " + cz.DEST_DB + ".temp_postcount as  \
             select count(1) as num, fid from " + cz.DEST_DB + ".pre_forum_post group by fid;"
 
@@ -121,3 +124,30 @@ def fun5(cz):
         logging.info("帖子数量计数器更新完毕")
     elif isinstance(re2, str):
         logging.error("帖子数量计数器更新出错: " + re2)
+
+def fun6(cz):
+    #更新用户跟帖计数
+    sqli1 = "CREATE view " + cz.DEST_DB + ".temp_postcount as  \
+            select count(1) as num, authorid from " + cz.DEST_DB + ".pre_forum_post group by authorid;"
+
+    TABLE = cz.DEST_DB + ".pre_common_member_count, " + cz.DEST_DB + ".temp_postcount"
+    op = "set " + cz.DEST_DB + ".pre_common_member_count.posts = " + cz.DEST_DB + ".temp_postcount.num"
+    WHERE = "where " + cz.DEST_DB + ".pre_common_member_count.uid = " + cz.DEST_DB + ".temp_postcount.authorid"
+
+    sqli3 = "drop view " + cz.DEST_DB + ".temp_postcount;"
+
+    re1 = cz.justdoit(sqli1)
+    re2 = cz.change(TABLE, op, WHERE)
+    re3 = cz.justdoit(sqli3)
+
+    if isinstance(re1, str):
+        logging.error(re1)
+    if isinstance(re3, str):
+        logging.error(re3)
+    
+    if (re2 is True):
+        logging.info("帖子数量计数器更新完毕")
+    elif isinstance(re2, str):
+        logging.error("帖子数量计数器更新出错: " + re2)
+
+
