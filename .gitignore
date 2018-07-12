@@ -1,6 +1,5 @@
 #python
 *.pyc
-.pyc
 */*.pyc
 __pycache__/
 
