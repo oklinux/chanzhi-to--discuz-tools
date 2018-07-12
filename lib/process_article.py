@@ -64,8 +64,8 @@ def fun3(cz):
     ORIGON_TABLE = cz.ORIGON_DB + '.eps_article'
     DEST_TABLE = cz.DEST_DB + '.pre_portal_article_title'
 
-    orignFields =  "id,  title, author, author,   source, copyURL, copyURL, summary, '1',      '1',          UNIX_TIMESTAMP(addedDate)"
-    targetFields = "aid, title, author, username, `from`,   fromurl, url,     summary, contents, allowcomment, dateline"
+    orignFields =  "id,  title, author, author,   0,      0,       source, copyURL, copyURL, summary, '1',      '1',          UNIX_TIMESTAMP(addedDate)"
+    targetFields = "aid, title, author, username, preaid, nextaid, `from`,   fromurl, url,     summary, contents, allowcomment, dateline"
 
     re = cz.transfer(ORIGON_TABLE, DEST_TABLE, orignFields, targetFields)
 
