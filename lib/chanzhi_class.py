@@ -48,7 +48,7 @@ class chanzhi:
 
     def change(self, table, operate, where=''):
         sqli = "update %s %s %s;"
-        print(sqli % (table, operate, where))
+        #print(sqli % (table, operate, where))
         cur = self.__conn.cursor()
         try:
             cur.execute(sqli % (table, operate, where))
