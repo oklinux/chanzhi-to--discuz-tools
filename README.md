@@ -19,7 +19,7 @@ process_reply.py|跟帖迁移|完成
 process_blog.py|博客迁移|完成
 process_article.py|文章迁移|完成
 process_htmlbbcode.py|html到bbcode转码|完成
-
+process_resetpassword.py|把用户uid导入pre_common_member_field_forum表|完成
 
 
 # 文章解析

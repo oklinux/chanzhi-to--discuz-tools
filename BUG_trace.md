@@ -7,3 +7,4 @@ id|description|why|status|find date|solved date
 4|帖子统计总数为0|pre_forum_forum.posts字段未更新|solved|2018/7/11|2018/7/12
 5|用户的发帖. 回帖数量有误|pre_common_member_count.posts字段未更新|solved|2018/7/11|2018/7/12
 6|用户的用户组未设置|pre_common_user.groupid字段未更新|solved|2018/7/11|2018/7/12
+7|用户重置密码失败|pre_common_member_field_forum表没有uid|solved|2018/7/21|2018/7/21

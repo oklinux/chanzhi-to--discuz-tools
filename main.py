@@ -9,7 +9,8 @@
 import logging
 
 from conf import config
-from lib import process_forum, process_reply, process_thread, process_user, process_article
+from lib import (process_article, process_forum, process_reply,
+                 process_resetpassword, process_thread, process_user)
 from lib.chanzhi_class import chanzhi
 
 logging.basicConfig(
@@ -26,3 +27,4 @@ if __name__ == '__main__':
     process_thread.run(cz)
     process_reply.run(cz)
     process_article.run(cz)
+    process_resetpassword.run(cz)
