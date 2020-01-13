@@ -22,9 +22,9 @@ logging.basicConfig(
 if __name__ == '__main__':
     cz = chanzhi()
     logging.info("开始迁移数据, 从{" + cz.ORIGON_DB + "} 到 {" + cz.DEST_DB + "}")
-    process_user.run(cz)
-    process_forum.run(cz)
+    #process_user.run(cz)
+    #process_forum.run(cz)
     process_thread.run(cz)
     process_reply.run(cz)
-    process_article.run(cz)
-    process_resetpassword.run(cz)
+    #process_article.run(cz)
+    #process_resetpassword.run(cz)
