@@ -81,7 +81,7 @@ def fun3(cz):
 
         #主题id已经加入pre_forum_thread, 此时加入比主题id大的跟帖id即可.
         for i in range(num):
-            sqli3 = 'insert into discuz.pre_forum_post_tableid values();'
+            sqli3 = 'insert into '+cz.DEST_DB+'.pre_forum_post_tableid values();'
             cur.execute(sqli3)
         conn.commit()
         cur.close()

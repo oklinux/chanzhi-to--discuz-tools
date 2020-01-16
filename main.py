@@ -25,6 +25,7 @@ if __name__ == '__main__':
     #process_user.run(cz)
     #process_forum.run(cz)
     process_thread.run(cz)
+
     process_reply.run(cz)
     #process_article.run(cz)
     #process_resetpassword.run(cz)

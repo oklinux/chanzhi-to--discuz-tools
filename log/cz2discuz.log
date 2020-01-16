@@ -46,3 +46,46 @@
 [2018-07-12 11:14:34 AM][root][ERROR][process_countnumber]:�û�����±���: (1054, "Unknown column 'uh.groupid' in 'field list'")
 [2018-07-12 11:15:58 AM][root][INFO][main]:��ʼǨ������, ��{old_chanzhi} �� {discuz}
 [2018-07-12 11:16:00 AM][root][INFO][process_countnumber]:�û���������, ˢ��ǰ̨ҳ����Ч
+[2020-01-04 12:19:05 PM][root][INFO][main]:开始迁移数据, 从{chanzhi} 到 {linuxren_dz}
+[2020-01-04 12:19:18 PM][root][INFO][process_thread]:帖子信息导入完毕
+[2020-01-04 12:19:29 PM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2020-01-04 12:19:40 PM][root][INFO][process_thread]:发帖用户id更新完毕
+[2020-01-04 12:19:40 PM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2020-01-04 12:19:41 PM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2020-01-04 12:19:50 PM][root][INFO][process_reply]:帖子内容迁移完毕
+[2020-01-04 12:21:30 PM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2020-01-15 09:30:21 AM][root][INFO][main]:开始迁移数据, 从{chanzhi} 到 {linuxren_dz}
+[2020-01-15 09:30:29 AM][root][INFO][process_thread]:帖子信息导入完毕
+[2020-01-15 09:30:39 AM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2020-01-15 09:30:48 AM][root][INFO][process_thread]:发帖用户id更新完毕
+[2020-01-15 09:30:49 AM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2020-01-15 09:30:50 AM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2020-01-15 09:31:27 AM][root][INFO][process_reply]:帖子内容迁移完毕
+[2020-01-15 09:32:53 AM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2020-01-15 13:15:16 PM][root][INFO][main]:开始迁移数据, 从{chanzhi} 到 {linuxren_dz}
+[2020-01-15 13:15:18 PM][root][INFO][process_thread]:帖子信息导入完毕
+[2020-01-15 13:15:28 PM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2020-01-15 13:15:30 PM][root][INFO][process_thread]:发帖用户id更新完毕
+[2020-01-15 13:15:30 PM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2020-01-15 13:15:30 PM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2020-01-15 13:15:34 PM][root][INFO][process_reply]:帖子内容迁移完毕
+[2020-01-15 13:15:51 PM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2020-01-15 14:01:21 PM][root][INFO][main]:开始迁移数据, 从{chanzhi} 到 {linuxren_dz}
+[2020-01-15 14:01:23 PM][root][INFO][process_thread]:帖子信息导入完毕
+[2020-01-15 14:01:33 PM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2020-01-15 14:01:34 PM][root][INFO][process_thread]:发帖用户id更新完毕
+[2020-01-15 14:01:34 PM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2020-01-15 14:01:34 PM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2020-01-15 14:01:38 PM][root][INFO][process_reply]:帖子内容迁移完毕
+[2020-01-15 14:01:55 PM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2020-01-15 14:07:01 PM][root][INFO][main]:开始迁移数据, 从{chanzhi} 到 {linuxren_dz}
+[2020-01-15 14:07:03 PM][root][INFO][process_thread]:帖子信息导入完毕
+[2020-01-15 14:07:14 PM][root][INFO][process_thread]:pre_forum_thread中帖子id更新完毕
+[2020-01-15 14:07:15 PM][root][INFO][process_thread]:发帖用户id更新完毕
+[2020-01-15 14:07:15 PM][root][INFO][process_thread]:帖子数量计数器更新完毕
+[2020-01-15 14:07:15 PM][root][INFO][process_thread]:用户发帖计数更新完毕
+[2020-01-15 14:07:19 PM][root][INFO][process_reply]:帖子内容迁移完毕
+[2020-01-15 14:07:35 PM][root][INFO][process_reply]:论坛帖子跟帖迁移完毕, 刷新前台页面生效
+[2020-01-15 14:09:41 PM][root][INFO][process_reply]:跟帖用户id更新完毕
+[2020-01-15 14:09:42 PM][root][INFO][process_reply]:帖子数量计数器更新完毕
+[2020-01-15 14:09:42 PM][root][INFO][process_reply]:帖子数量计数器更新完毕
